@@ -82,7 +82,7 @@ header {
     display: flex;
     width: 100%;
     height: auto;
-    margin-top: 700px;
+    margin-top: 668px;
 }
 
 .header--exit-container a {
@@ -108,4 +108,30 @@ header {
 
 main {
     padding-top: 48px;
+}
+
+.main--sections--botones-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.agregarEliminarBotones-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.agregarEliminarBotones-container button:nth-child(2) {
+    margin-left: 15px;
+}
+
+.main--sections--botones-container .guardarBoton {
+    width: 155px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--gris);
+    padding: 10px;
+    font-size: 0.6rem;
+    font-weight: 500;
 }
