@@ -19,6 +19,10 @@ body {
     font-size: 1.6rem;
 }
 
+.inactive {
+    display: none;
+}
+
 header {
     position: relative;
     display: flex;
@@ -80,12 +84,97 @@ header {
 
 
 main {
-    display: flex;
     width: 100%;
     min-width: 320px;
     height: auto;
     padding: 25px;
     background-color: var(--blanco);
+    z-index: 1;
+}
+
+.mobileMenu-container{
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    min-width: 320px;
+    height: 1150px;
+    padding: 60px 50px 60px 50px;
+    background-color: var(--gris);
+}
+
+.mobileMenu--menu-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileMenu--menu-container h1 {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--negro);
+}
+
+.mobileMenu--menu--options-container a {
+    width: 100%;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--negro);
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.mobileMenu--menu--options-container a hr {
+    margin: 0;
+    border: none;
+    width: 260px;
+    height: 1px;
+    background-color: var(--negro);
+    opacity: 1;
+}
+
+.mobileMenu--menu--options-container a .img1 {
+    width: 45px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-left: 160px;
+    opacity: 0.5;
+}
+
+.mobileMenu--menu--options-container a .img2 {
+    width: 45px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-left: 170px;
+    opacity: 0.5;
+}
+
+.mobileMenu--exit-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 350px;
+}
+
+.mobileMenu--exit-container a {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+}
+
+.mobileMenu--exit-container img {
+    width: 40px;
+    height: 40px;
+}
+
+.mobileMenu--exit-container h1 {
+    margin-top: 6.5px;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--negro);
 }
 
 .main--sections-container {
@@ -217,4 +306,11 @@ main {
     padding: 10px;
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+@media (min-width: 641px) {
+
+    .mobileMenu-container {
+        display: none;
+    }
 }
